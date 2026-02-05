@@ -2,8 +2,8 @@ backend:
   name: github
   repo: LotusPulse/friendly-palm-tree
   branch: main
-  site_domain: e-autoalarm.ee
-  base_url: https://decap-cms-oauth.your-worker.workers.dev # See on vajalik sisselogimiseks
+  base_url: https://friendly-palm-tree.pages.dev
+  auth_endpoint: api/auth
 
 # See rida lubab lokaalset arendust. See lülitub automaatselt välja, kui local_backend: false
 local_backend: true

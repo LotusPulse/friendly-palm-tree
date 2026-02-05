@@ -5,8 +5,8 @@ export async function load({ params }) {
     const { slug } = params;
 
     try {
-        const serviceFiles = import.meta.glob('/src/content/services/*.md', { as: 'raw', eager: true });
-        const filePath = `/src/content/services/${slug}.md`;
+        const serviceFiles = import.meta.glob('../../../content/services/*.md', { as: 'raw', eager: true });
+        const filePath = `../../../content/services/${slug}.md`;
 
         if (!serviceFiles[filePath]) {
             throw error(404, 'Teenust ei leitud');

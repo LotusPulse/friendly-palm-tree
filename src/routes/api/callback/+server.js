@@ -1,9 +1,11 @@
-import { env } from '$env/dynamic/private';
-
-export const GET = async ({ url }) => {
+export const GET = async ({ url, platform }) => {
     const code = url.searchParams.get('code');
-    const clientId = env.GITHUB_CLIENT_ID;
-    const clientSecret = env.GITHUB_CLIENT_SECRET;
+    const clientId = platform?.env?.GITHUB_CLIENT_ID || process.env.GITHUB_CLIENT_ID;
+    const clientSecret = platform?.env?.GITHUB_CLIENT_SECRET || process.env.GITHUB_CLIENT_SECRET;
+
+    if (!clientId || !clientSecret) {
+        return new Response('GitHub OAuth credentials are not configured', { status: 500 });
+    }
 
     const response = await fetch('https://github.com/login/oauth/access_token', {
         method: 'POST',
@@ -24,7 +26,6 @@ export const GET = async ({ url }) => {
         return new Response(`Error: ${data.error_description}`, { status: 400 });
     }
 
-    // HTML to send the token back to Decap CMS
     const html = `
     <!DOCTYPE html>
     <html>

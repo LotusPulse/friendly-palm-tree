@@ -6,9 +6,13 @@ export async function load() {
 
     const services = Object.entries(serviceFiles).map(([path, content]) => {
         const { data } = matter(content);
+        // Get generic filename from path regardless of directory structure
+        const fileName = path.split('/').pop();
+        const slug = fileName ? fileName.replace('.md', '') : '';
+
         return {
             ...data,
-            slug: path.split('/').pop().replace('.md', '')
+            slug
         };
     }).sort((a, b) => (a.order || 0) - (b.order || 0));
 

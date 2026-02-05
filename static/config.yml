@@ -1,0 +1,44 @@
+backend:
+  name: github
+  repo: your-username/autoalarm # SEE INFO: Muuda see oma GitHub kasutajanimeks ja repo nimeks
+  branch: main
+  site_domain: e-autoalarm.ee
+  base_url: https://decap-cms-oauth.your-worker.workers.dev # See on vajalik sisselogimiseks
+
+# See rida lubab lokaalset arendust. See lülitub automaatselt välja, kui local_backend: false
+local_backend: true
+
+media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+
+collections:
+  - name: "services"
+    label: "Teenused (Services)"
+    folder: "src/content/services"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Kategooria", name: "category", widget: "select", options: ["Turvalisus", "Mugavus", "Lisavarustus"], default: "Mugavus" }
+      - { label: "Pealkiri (EE)", name: "title", widget: "string" }
+      - { label: "Pealkiri (EN)", name: "title_en", widget: "string", required: false }
+      - { label: "Pealkiri (RU)", name: "title_ru", widget: "string", required: false }
+      
+      - { label: "Lühikirjeldus (EE)", name: "description", widget: "text" }
+      - { label: "Lühikirjeldus (EN)", name: "description_en", widget: "text", required: false }
+      - { label: "Lühikirjeldus (RU)", name: "description_ru", widget: "text", required: false }
+      
+      - { label: "Ikoon (SVG path)", name: "icon", widget: "text", hint: "SVG path d-väärtus", required: false }
+      - { label: "Ikoon (PNG/Pilt)", name: "icon_image", widget: "image", required: false }
+      - { label: "Põhipilt", name: "image", widget: "image", required: false }
+      - { label: "Punktid (list)", name: "items", widget: "list", required: false }
+      - { label: "Sisu (täisvaate tekst)", name: "body", widget: "markdown" }
+      - { label: "Järjekord", name: "order", widget: "number", default: 0 }
+
+  - name: "partners"
+    label: "Partnerid"
+    folder: "src/content/partners"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Nimi", name: "title", widget: "string" }
+      - { label: "Järjekord", name: "order", widget: "number", default: 0 }

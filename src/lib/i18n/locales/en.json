@@ -1,0 +1,42 @@
+{
+    "nav": {
+        "home": "Home",
+        "services": "Services",
+        "contact": "Contact",
+        "inquiry": "Get in Touch"
+    },
+    "hero": {
+        "title1": "Quality",
+        "title2": "Tow Bars.",
+        "title3": "Professional",
+        "title4": "Car Alarms.",
+        "subtitle": "High-quality tow bars and modern security solutions for your vehicle. Official Thule, Bosal, and Steinhof partner.",
+        "cta": "Get in Touch"
+    },
+    "services": {
+        "title": "Our",
+        "title_italic": "Services",
+        "description": "Expert installation and technical support for all modern vehicle brands.",
+        "read_more": "Read More"
+    },
+    "contact": {
+        "title": "How to",
+        "title_italic": "Find Us?",
+        "description": "Our office is located in Tallinn, Kadaka tee 1. We are ready to help with all your technical questions.",
+        "address_label": "Location",
+        "contact_label": "Contact",
+        "hours_label": "Working Hours",
+        "cta_button": "View More Details",
+        "form_title": "Send us a message",
+        "name_label": "Your Name",
+        "email_label": "Email Address",
+        "message_label": "How can we help?",
+        "send_button": "Send Inquiry"
+    },
+    "cta_section": {
+        "title": "Ready for",
+        "title_italic": "Upgrades?",
+        "description": "Contact us and we will find the best technical solution for your vehicle.",
+        "button": "GET A QUOTE"
+    }
+}

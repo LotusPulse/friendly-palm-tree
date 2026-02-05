@@ -1,0 +1,42 @@
+{
+    "nav": {
+        "home": "Avaleht",
+        "services": "Teenused",
+        "contact": "Kontakt",
+        "inquiry": "Võta ühendust"
+    },
+    "hero": {
+        "title1": "Kvaliteetsed",
+        "title2": "Veokonksud.",
+        "title3": "Professionaalsed",
+        "title4": "Autoalarmid.",
+        "subtitle": "Kvaliteetsed veokonksud ja kaasaegsed turvalahendused Sinu sõidukile. Thule, Bosal ja Steinhof ametlik partner.",
+        "cta": "Võta ühendust"
+    },
+    "services": {
+        "title": "Meie",
+        "title_italic": "Teenused",
+        "description": "Ekspertpaigaldus ja tehniline tugi kõikidele kaasaegsetele automarkidele.",
+        "read_more": "Loe lähemalt"
+    },
+    "contact": {
+        "title": "Kuidas Meid",
+        "title_italic": "Leida?",
+        "description": "Meie esindus asub Tallinnas, Kadaka tee 1. Oleme valmis aitama teid kõigi tehniliste küsimustega.",
+        "address_label": "Asukoht",
+        "contact_label": "Kontakt",
+        "hours_label": "Tööajad",
+        "cta_button": "Vaata täpsemaid andmeid",
+        "form_title": "Saada meile sõnum",
+        "name_label": "Teie Nimi",
+        "email_label": "E-posti aadress",
+        "message_label": "Kuidas saame aidata?",
+        "send_button": "Saada päring"
+    },
+    "cta_section": {
+        "title": "Oled valmis",
+        "title_italic": "Uuendusteks?",
+        "description": "Võta meiega ühendust ja leiame sinu autole parima tehnilise lahenduse.",
+        "button": "KÜSI PAKKUMIST"
+    }
+}

@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: your-username/autoalarm # SEE INFO: Muuda see oma GitHub kasutajanimeks ja repo nimeks
+  repo: LotusPulse/friendly-palm-tree
   branch: main
   site_domain: e-autoalarm.ee
   base_url: https://decap-cms-oauth.your-worker.workers.dev # See on vajalik sisselogimiseks
